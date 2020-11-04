@@ -1,0 +1,62 @@
+{
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  // Character(s) to be added after the classes CSS (including blank spaces)
+  "vs-html-to-css.append": " {\n}\n",
+  "editor.tabSize": 2,
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "twig-language.preserveComment": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "files.autoSave": "off",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "reactTypeScriptToolbox.quotemarksString": "single",
+  "reactTypeScriptToolbox.quotemarksImportExport": "single",
+  "prettier.singleQuote": true,
+  "javascript.preferences.quoteStyle": "single",
+  "typescript.preferences.quoteStyle": "single",
+  "twig-language.quoteConvert": "single",
+  "twig-language-2.quoteConvert": "single",
+  "prettier.jsxSingleQuote": true,
+  "vetur.format.defaultFormatterOptions": {
+    "js-beautify-html": {
+      "wrap_attributes": "force-expand-multiline"
+    },
+    "prettyhtml": {
+      "printWidth": 100,
+      "singleQuote": true,
+      "wrapAttributes": false,
+      "sortAttributes": false
+    }
+  },
+  "formattingToggle.affects": [
+    "formatOnPaste",
+    "formatOnSave",
+    "formatOnType"
+  ],
+  "window.zoomLevel": -1,
+  "beautify.ignore": ""
+}
