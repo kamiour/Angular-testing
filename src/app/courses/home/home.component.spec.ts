@@ -20,7 +20,10 @@ import { COURSES } from "../../../../server/db-data";
 import { setupCourses } from "../common/setup-test-data";
 import { By } from "@angular/platform-browser";
 import { of } from "rxjs";
-import { NoopAnimationsModule } from "@angular/platform-browser/animations";
+import {
+  BrowserAnimationsModule,
+  NoopAnimationsModule,
+} from "@angular/platform-browser/animations";
 import { click } from "../common/test-utils";
 
 describe("HomeComponent", () => {
@@ -49,7 +52,7 @@ describe("HomeComponent", () => {
         fixture = TestBed.createComponent(HomeComponent);
         component = fixture.componentInstance;
         el = fixture.debugElement;
-        coursesService = TestBed.get(CoursesService);
+        coursesService = TestBed.inject(CoursesService);
       });
   }));
 
@@ -90,7 +93,9 @@ describe("HomeComponent", () => {
     fixture.detectChanges();
 
     setTimeout(() => {
-      const cardTitles = el.queryAll(By.css(".mat-card-title"));
+      const cardTitles = el.queryAll(
+        By.css(".mat-tab-body-active .mat-card-title")
+      );
       expect(cardTitles.length).toBeGreaterThan(
         0,
         "Could not find any card titles"
